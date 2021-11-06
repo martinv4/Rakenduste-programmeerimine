@@ -6,6 +6,7 @@ import Cart from './pages/Cart';
 import AddItem from './pages/AddItem';
 import NavBar from './components/NavBar';
 import AddCategory from './pages/AddCategory';
+import CategoryList from "../components/CategoryList";
 
 
 function App() {
