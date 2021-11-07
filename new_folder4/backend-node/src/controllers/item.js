@@ -24,12 +24,14 @@ exports.createItem = async (req, res) => {
 exports.updateItem = async (req, res) => {
   const { id } = req.params;
 
-  const item = await Item.findOneAndUpdate({ _id: id }, { $inc: { "quality" : 1 } })
+  const item = await Item.findOne({ _id: id })
 
-  if (!item) res.status(404).send("No item with that id found")
+  item.quality = item.quality + 1
 
-  res.status(200).send(`Successfully incremented 'quality' by 1 on the following item: \n ${item}`)
-}
+  const savedItem = item.save()
+
+  res.status(200).send(`Successfully updated item ${savedItem._id}`)
+  }
 
 exports.deleteItem = async (req, res) => {
   const { id } = req.params;
