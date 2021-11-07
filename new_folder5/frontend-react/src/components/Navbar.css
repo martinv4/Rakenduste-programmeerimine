@@ -1,0 +1,27 @@
+
+/*.navbar {
+	background: linear-gradient(90deg, rgba(132,219,255,1) 0%, rgba(128,250,255,1) 50%, rgba(125,255,223,1) 100%);
+	height:200px;
+	justify-content: center;
+	-webkit-mask:linear-gradient(#fff,transparent);
+			mask:linear-gradient(#fff,transparent);
+
+  }*/
+  
+  .cart {
+	height: 50px;
+	margin: 25px;
+  }
+  
+  .headerButton {
+	background-color: #008CBA;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 15px;
+	margin-top:25px;
+  }
