@@ -1,4 +1,5 @@
-import React from "react";
+import {React} from "react";
+
 
 function Room({ room, type }) {
     return (
